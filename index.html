@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Webapp</title>
+		<script src="d3/d3.js" rel="text/javascript"></script>
+		<script src="scripts/BaseHandlerUtil.js" rel="text/javascript"></script>
+		<script src="scripts/ChartUtil.js" rel="text/javascript"></script>
+		<script src="scripts/WebConstants.js" rel="text/javascript"></script>
+		<link href="styles/styles.css" rel="stylesheet"></link>
+	</head>
+	<body>
+		<header>
+			<h1>Webapp</h1>
+		</header>
+		<div class="row">
+			<div class="column">
+				<div id="intro">
+					<p id="intro-text">
+						Lorem ipsum dolor sit amet, neque nisl pretium pellentesque id, vehicula pellentesque adipiscing interdum non et, donec lectus nulla, tellus eget. Felis nec lorem faucibus, risus diam lectus platea consequat. Non fermentum aut. Consectetuer praesent
+						etiam elit lectus ac lorem, consectetuer a eu massa amet mollis velit, in nulla, tortor ac maecenas hymenaeos vitae, non id mauris elementum posuere. Sit vestibulum risus, tortor facilisis velit commodo curabitur mauris, a nunc wisi.
+					</p>
+					<input id="click" type="button" value="Generate color" onclick="BaseHandlerUtil.onClick()"/>
+				</div>
+				<br>
+			</div>
+			<div class="column">
+				<div id="d3-bar-chart-div">
+					<div>
+						<h3>D3 sample Charts</h3>
+					</div>
+					<div>
+						<input id="click" type="radio" name="chartType" value="1" onclick="ChartUtil.selectCharts()"/>
+						Bar Chart
+						<input id="click" type="radio" name="chartType" value="2" onclick="ChartUtil.selectCharts()"/>
+						Pie Chart
+						<input id="click" type="radio" name="chartType" value="4" onclick="ChartUtil.selectCharts()"/>
+						Circle Zoom packing<br>
+					</div>
+					<div id="canvas"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
